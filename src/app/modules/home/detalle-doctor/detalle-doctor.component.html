@@ -1,0 +1,123 @@
+<!-- <div class="border border-gray-300 p-4 rounded-lg">
+    <div class="flex items-center">
+      <img src="assets/doctor1.png" alt="Foto del doctor" class="h-48 w-48 rounded-full" />
+      <div class="ml-4">
+        <h4 class="text-lg font-semibold">Dr. Thelmo Ruiz</h4>
+        <p class="text-sm">Dentista</p>
+      </div>
+    </div>
+    <button class="bg-blue-500 text-white py-2 px-4 mt-4 rounded">Volver a la lista de doctores</button>
+</div> -->
+<!-- <div class="border border-gray-300 p-4 rounded-lg">
+    <div class="flex items-center">
+      <img src="assets/doctor1.png" alt="Foto del doctor" class="h-48 w-48 rounded-full" />
+      <div class="ml-4">
+        <h4 class="text-lg font-semibold">Dr. Thelmo Ruiz</h4>
+        <p class="text-sm">Dentista</p>
+      </div>
+    </div>
+    <div class="mt-4">
+        <label for="costo">Costo consulta:</label>
+        <p id="costo"> S/ 150.00</p>
+    </div>
+    <div class="mt-4">
+        <label for="descripcion">Descripción:</label>
+        <p id="descripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod quam a sapien elementum euismod. Phasellus mattis aliquam dolor at posuere. Sed non eros felis. Suspendisse vitae eros vel velit bibendum congue. Etiam consequat est libero, nec venenatis lorem eleifend vel. Ut sit amet elit vitae elit auctor posuere. Nullam ultrices euismod risus, a porttitor sapien eleifend eu. Sed eu diam diam. Cras maximus lorem in nulla maximus efficitur. Suspendisse potenti. Praesent feugiat, magna vel dignissim vestibulum, justo mi elementum justo, nec bibendum arcu felis sed mauris.</p>
+    </div>
+    <div class="mt-4">
+      <label for="fecha">Fecha:</label>
+      <p-calendar [(ngModel)]="selectedDate" [showIcon]="true" id="fecha" (onSelect)="onDateSelect()"></p-calendar>
+    </div>
+    <div class="mt-4">
+        <label for="hora">Hora:</label>
+        <p-dropdown [(ngModel)]="selectedTime" [options]="availableTimes" id="hora"></p-dropdown>
+    </div>
+    <div class="mt-4">
+      <button class="bg-blue-500 text-white py-2 px-4 mt-4 rounded">Reservar cita</button>
+    </div>
+    <div class="mt-4">
+      <button class="bg-blue-500 text-white py-2 px-4 mt-4 rounded">Volver a la lista de doctores</button>
+    </div>
+  </div> -->
+
+<div class="border border-gray-300 p-4 rounded-lg">
+    <div class="flex items-center">
+        <img src="assets/doctor1.png" alt="Foto del doctor" class="h-48 w-48 rounded-full" />
+        <div class="ml-4">
+            <h4 class="text-lg font-semibold">Dr. Thelmo Ruiz</h4>
+            <p class="text-sm">Dentista</p>
+            <div class="descripcion">
+                <label for="descripcion">Descripción:</label>
+                <p id="descripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod quam a sapien
+                    elementum euismod. Phasellus mattis aliquam dolor at posuere. Sed non eros felis. Suspendisse vitae
+                    eros vel velit bibendum congue. Etiam consequat est libero, nec venenatis lorem eleifend vel. Ut sit
+                    amet elit vitae elit auctor posuere. Nullam ultrices euismod risus, a porttitor sapien eleifend eu.
+                    Sed eu diam diam. Cras maximus lorem in nulla maximus efficitur. Suspendisse potenti. Praesent
+                    feugiat, magna vel dignissim vestibulum, justo mi elementum justo, nec bibendum arcu felis sed
+                    mauris.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex justify-center items-center space-x-4 gap-20">
+        <div class="mt-4">
+            <p>Ranking:</p>
+            <div>
+              <i class="fa fa-star star-gold"></i>
+              <i class="fa fa-star star-gold"></i>
+              <i class="fa fa-star star-gold"></i>
+              <i class="fa fa-star star-gold"></i>
+            </div>
+        </div>
+        <div class="mt-4">
+            <label for="costo">Costo consulta:</label>
+            <p id="costo"> S/ 150.00</p>
+        </div>
+        <div class="mt-4">
+            <label for="fecha">Fecha:</label>
+            <p-calendar [(ngModel)]="selectedDate" [showIcon]="true" id="fecha"
+                (onSelect)="onDateSelect()"></p-calendar>
+        </div>
+        <div class="mt-4">
+            <label for="hora">Hora:</label>
+            <p-dropdown [(ngModel)]="selectedTime" [options]="availableTimes" id="hora"></p-dropdown>
+        </div>
+    </div>
+
+    <div class="flex justify-around">
+        <div class="mt-4">
+            <button class="bg-blue-500 text-white py-2 px-4 mt-4 rounded">Volver a la lista de doctores</button>
+        </div>
+        <div class="mt-4 ml-4">
+            <button class="bg-blue-500 text-white py-2 px-4 mt-4 rounded">Reservar cita</button>
+        </div>
+    </div>
+</div>
+<div class=" mt-4">
+    <h3>Comentarios de clientes</h3>
+    <div class="flex">
+        <div class="flex items-center mt-4">
+            <img src="assets/jp.jpg" alt="Foto del cliente" class="h-16 w-16 rounded-full" />
+            <div class="ml-4">
+              <p class="font-semibold">Juan Pérez</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod quam a sapien elementum euismod.</p>
+            </div>
+          </div>
+          <div class="flex items-center mt-4">
+            <img src="assets/jp.jpg" alt="Foto del cliente" class="h-16 w-16 rounded-full" />
+            <div class="ml-4">
+              <p class="font-semibold">María Gonzales</p>
+              <p>Phasellus mattis aliquam dolor at posuere. Sed non eros felis. Suspendisse vitae eros vel velit bibendum congue.</p>
+            </div>
+          </div>
+          <div class="flex items-center mt-4">
+            <img src="assets/jp.jpg" alt="Foto del cliente" class="h-16 w-16 rounded-full" />
+            <div class="ml-4">
+              <p class="font-semibold">Pedro Rodríguez</p>
+              <p>Etiam consequat est libero, nec venenatis lorem eleifend vel. Ut sit amet elit vitae elit auctor posuere.</p>
+            </div>
+          </div>
+    </div>
+
+  </div>
+  
