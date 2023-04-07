@@ -10,6 +10,7 @@ import { CalendarModule } from 'primeng/calendar';
 import { ButtonModule } from 'primeng/button';
 import { InputTextareaModule } from 'primeng/inputtextarea';
 import { DetalleDoctorComponent } from './detalle-doctor/detalle-doctor.component';
+import { HttpClientModule } from '@angular/common/http'; 
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -18,6 +19,6 @@ const routes: Routes = [
 
 @NgModule({
   declarations: [HomeComponent, FiltersComponent, DoctorCardComponent, DetalleDoctorComponent],
-  imports: [CommonModule, RouterModule.forChild(routes) ,ButtonModule,FormsModule,InputTextareaModule,DropdownModule,CalendarModule],
+  imports: [CommonModule,HttpClientModule, RouterModule.forChild(routes) ,ButtonModule,FormsModule,InputTextareaModule,DropdownModule,CalendarModule],
 })
 export class HomeModule {}

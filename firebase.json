@@ -1,0 +1,16 @@
+{
+  "hosting": {
+    "public": "dist/mi-app-citas-medicas",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
